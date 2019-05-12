@@ -76,9 +76,7 @@ public class Resolver {
         int row = caseToSolve[0];
         int col = caseToSolve[1];
         for (int i = 1; i <= 9; i++) {
-            //System.out.println(row + " : " + col + "                   " + i);
             if (isOk(grid, row, col, i)) {
-                System.out.println(row + " : " + col + "                   " + i);
                 grid[row][col] = i;
                 if (solve(grid)) {
                     this.solvedGrid = grid;
